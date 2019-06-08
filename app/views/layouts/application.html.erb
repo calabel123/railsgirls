@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rails5Proj</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.css" rel="stylesheet">
+<link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap-theme.css" rel="stylesheet">
+            
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+
+  <body>
+    <div class="container">
+                        <%= yield %>
+                    </div>
+                <footer>
+    <div class="container">
+        Rails Girls <%= Time.now.year %>
+    </div>
+</footer>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.js"></script>
+       
+                
+  </body>
+</html>
